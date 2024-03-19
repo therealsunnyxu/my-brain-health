@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Julie Griffith, Pediatric & Adult Neurologist in Marin County</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <style>
+        /* Dynamic scrolling header behavior */
+        .scrolling-active {
+            background-color: #008000;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            /* Ensure header stays on top */
+        }
+
+        #hero {
+            background: linear-gradient(to bottom, #1e1b4b7f 0%, #ffffff7f 100%), url('./assets/images/6776635-beautiful-sunrise-wallpaper.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 75% 60%;
+            background-size: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header
+        class="text-white fixed top-0 left-0 w-full z-10 flex flex-col justify-between lg:justify-center items-center transition-colors bg-gray-900/10">
+        <div class="flex px-4 py-4 flex md:block lg:flex justify-between lg:justify-center w-full lg:w-3/4">
+            <a href="/" class="font-bold text-1xl flex shrink lg:flex-shrink-0 px-4 py-2">Julie Anne Griffith, M.D.,
+                M.S., CMT, MIM® B.C.I.P.</a>
+            <nav class="hidden md:flex shrink-0 p-2">
+                <ul class="flex shrink-0 space-x-2">
+                    <li><a href="/" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">Home</a></li>
+                    <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">About Us</a></li>
+                    <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">Our Services</a></li>
+                    <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">New Patients</a></li>
+                    <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">Patient Portal</a>
+                    </li>
+                    <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <button id="navToggle" class="flex md:hidden shrink-0 hover:bg-white/25 hover:rounded-xl p-2 h-min">
+                <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </button>
+        </div>
+        <nav id="navDrawer"
+            class="md:hidden transform transition-all ease-in-out duration-300 flex flex-col text-white overflow-hidden w-screen max-h-0 closed">
+            <ul class="space-y-4 pt-4 pb-8 px-8">
+                <li><a href="/" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">Home</a></li>
+                <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">About Us</a></li>
+                <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">Our Services</a></li>
+                <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">New Patients</a></li>
+                <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">Patient Portal</a>
+                </li>
+                <li><a href="#" class="hover:bg-white/25 hover:rounded-xl p-2 font-medium">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero"
+        class="bg-blend-darken text-white relative bg-purple-500/50 flex items-center justify-center pt-48 pb-24">
+        <div class="flex flex-col items-center px-4">
+            <div
+                class="flex flex-col md:flex-row space-y-16 md:space-y-0 space-x-0 md:space-x-16 w-full lg:w-3/4 justify-between">
+                <div class="flex flex-col items-center shrink-0">
+                    <img src="assets/images/Julie_026.jpg" alt="Portrait of Dr. Julie Griffith" id="portrait"
+                        class="rounded-xl h-32 w-32 md:h-64 md:w-64">
+                </div>
+                <div class="flex flex-col justify-center items-center text-center w-full md:w-1/2 space-y-4">
+                    <h1 class="text-3xl font-bold">Meet Dr. Julie Griffith</h1>
+                    <p class="font-medium">Harvard and Oxford trained Neurologist, providing integrative medical and
+                        chronic neurologic care
+                        for over 25 years.</p>
+                    <p class="italic text-lg">Telehealth and in-office appointments available!</p>
+                    <a href="#"
+                        class="bg-emerald-900 text-white text-lg  rounded-xl font-bold px-4 py-2 max-w-max hover:scale-125 transition-transform duration-300">Request
+                        an Appointment</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="flex flex-col mx-auto px-4 text-center pt-16 pb-32 w-full lg:w-3/4 justify-center items-center space-y-8">
+        <h2 class="text-3xl font-bold text-blue-900">Our Services</h2>
+        <h3 class="text-center text-2xl font-medium ">Dr. Griffith performs Diagnostic Testing for:</h3>
+
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-8 text-left">
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path
+                        d="M760-60q-15 0-28-7t-21-19q-121-22-213.5-108T368-406q-96 45-152 132.5T160-80H80q0-134 73.5-244T350-486q-21-115-3.5-207.5T420-843q2-24 19-40.5t41-16.5q25 0 42.5 17.5T540-840q0 25-17.5 42.5T480-780h-4q-2 0-5-1-22 25-35 61.5T419-638q20-20 46.5-34.5T524-695q30-8 64.5-10.5t72.5.5q8-8 18-11.5t21-3.5q25 0 42.5 17.5T760-660q0 25-17.5 42.5T700-600q-14 0-27.5-6.5T651-625q-33-2-63.5.5T533-614q-39 13-61.5 38T443-512q28-5 47.5-6.5T576-520q8-10 19.5-15t24.5-5q25 0 42.5 17.5T680-480q0 25-17.5 42.5T620-420q-13 0-24.5-5T576-440q-63 0-83 1.5t-45 6.5q13 34 51 52t99 20q29 2 62.5-1t67.5-9q8-14 22-22t30-8q25 0 42.5 17.5T840-340q0 25-17.5 42.5T780-280q-10 0-18.5-3t-16.5-9q-34 6-66.5 9.5T617-279q-29 0-55-3t-49-9q38 49 92.5 82.5T720-164q8-8 18.5-12t21.5-4q25 0 42.5 17.5T820-120q0 25-17.5 42.5T760-60Z" />
+                </svg>
+                <p>Allergies</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path
+                        d="M220-260q-92 0-156-64T0-480q0-92 64-156t156-64q37 0 71 13t61 37l68 62-60 54-62-56q-16-14-36-22t-42-8q-58 0-99 41t-41 99q0 58 41 99t99 41q22 0 42-8t36-22l310-280q27-24 61-37t71-13q92 0 156 64t64 156q0 92-64 156t-156 64q-37 0-71-13t-61-37l-68-62 60-54 62 56q16 14 36 22t42 8q58 0 99-41t41-99q0-58-41-99t-99-41q-22 0-42 8t-36 22L352-310q-27 24-61 37t-71 13Z" />
+                </svg>
+                <p>Autism Spectrum Disorders (ASD)</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path
+                        d="M521-80q-60 0-150-16.5T227-154q-30-23-63-72t-60.5-107Q76-391 58-449t-18-99q0-85 58-138.5T222-783q60-39 133-68t151-29q78 0 141.5 30T774-777q15 10 39 30t47.5 50q23.5 30 41 70.5T920-534q2 74-30.5 154.5t-88 147Q746-166 673-123T521-80Zm-1-80q62 0 120.5-36T744-287.5q45-55.5 71.5-121T840-532q-2-69-41-113t-70-65q-51-35-105-62.5T506-800q-66 0-130 26t-116 61q-39 26-90 66.5T119-552q0 32 15.5 82t39 100q23.5 50 50.5 92.5t50 59.5q36 27 111 42.5T520-160Zm-106-80q54 0 89-38t35-86q0-22-9-43.5T500-447q-22-20-36-44t-21-53q-10-44-43.5-70T324-640q-49 0-86.5 37.5T200-516q0 39 16.5 87t45.5 90q29 42 68 70.5t84 28.5Zm0-80q-27 0-51-22.5T320.5-396Q302-427 291-460.5T280-516q0-17 13.5-30.5T324-560q12 0 24.5 8.5T366-526q11 42 29.5 75.5T446-388q6 5 9 12t3 14q0 16-12 29t-32 13Zm236-120q17 0 28.5-11.5T690-480v-10l10 5q15 8 30.5 3.5T754-500q9-14 5-30.5T740-555l-10-5 10-5q15-8 18.5-24t-4.5-31q-8-14-23.5-18t-30.5 4l-10 5v-11q0-17-11.5-28.5T650-680q-17 0-28.5 11.5T610-640v11l-9-5q-14-8-30-3.5T546-619q-8 14-4.5 31t19.5 24l9 4-9 6q-14 9-18.5 24.5T546-500q8 15 24.5 19t30.5-4l9-5v10q0 17 11.5 28.5T650-440Zm-168-40Z" />
+                </svg>
+                <p>Autoimmune Diseases</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path
+                        d="M200-40v-40q0-139 58-225.5T418-480q-102-88-160-174.5T200-880v-40h80v40q0 11 .5 20.5T282-840h396q1-10 1.5-19.5t.5-20.5v-40h80v40q0 139-58 225.5T542-480q102 88 160 174.5T760-80v40h-80v-40q0-11-.5-20.5T678-120H282q-1 10-1.5 19.5T280-80v40h-80Zm138-640h284q13-19 22.5-38t17.5-42H298q8 22 17.5 41.5T338-680Zm142 148q20-17 39-34t36-34H405q17 17 36 34t39 34Zm-75 172h150q-17-17-36-34t-39-34q-20 17-39 34t-36 34ZM298-200h364q-8-22-17.5-41.5T622-280H338q-13 19-22.5 38T298-200Z" />
+                </svg>
+                <p>Genetic Disorders</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" height="24px" width="24px" version="1.1" id="_x32_"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                    xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #000000;
+                        }
+                    </style>
+                    <g>
+                        <path class="st0" d="M233.972,228.194c-12.8,39.747,9.046,82.341,48.792,95.159c39.747,12.8,82.341-9.036,95.16-48.783
+                   c12.78-39.747-9.056-82.34-48.784-95.141C289.394,166.629,246.772,188.466,233.972,228.194z" />
+                        <polygon class="st0" points="189.486,91.816 251.901,168.827 264.539,162.092 214.465,94.787 232.749,84.709 175.932,0 
+                   158.49,10.804 208.725,80.143 	" />
+                        <polygon class="st0" points="130.864,169.056 221.171,199.575 228.612,186.899 153.732,157.765 164.527,138.813 75.309,98.483 
+                   65.737,117.378 141.697,148.165 	" />
+                        <path class="st0" d="M457.589,456.129c-9.781-75.548-69.54-90.508-138.307-99.048c-0.028,0.02-168.492-20.594-168.492-20.594
+                   l55.737-70.266c10.641-12.285,9.332-30.873-2.952-41.533c-12.255-10.632-30.844-9.294-41.494,2.952L57.656,337.863
+                   c-22.83,24.778-1.567,61.479,22.39,67.525c5.98,1.5,132.547,29.803,133.96,32.248c5.063,8.903,5.56,74.364,5.56,74.364h244.537
+                   L457.589,456.129z" />
+                    </g>
+                </svg>
+                <p>Headaches</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path
+                        d="M440-640v-120H280v-80h400v80H520v120h-80ZM160-120v-320h80v40h120v-120h-40v-80h320v80h-40v120h120v-40h80v320h-80v-40H240v40h-80Zm80-120h480v-80H520v-200h-80v200H240v80Zm240 0Z" />
+                </svg>
+                <p>Heavy Metal Poisoning</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 533.725 533.725"
+                    xml:space="preserve">
+                    <g>
+                        <path d="M476.472,266.407c31.575,0,57.253-25.684,57.253-57.265c0-31.575-25.678-57.265-57.253-57.265
+		c-31.574,0-57.264,25.69-57.264,57.265c0,10.667,2.988,20.627,8.08,29.193l-98.812,72.024
+		c-15.251-16.604-36.666-27.324-60.646-28.562l-6.159-99.991c33.034-6.667,57.977-35.896,57.977-70.857
+		c0.023-39.842-32.416-72.27-72.275-72.27c-39.854,0-72.305,32.427-72.305,72.281c0,38.003,29.496,69.175,66.781,71.995
+		l6.16,100.032c-27.914,4.904-51.31,22.852-63.711,47.363l-58.59-21.639c0.654-3.619,1.051-7.321,1.051-11.128
+		c0-34.944-28.434-63.366-63.389-63.366C28.445,234.219,0,262.641,0,297.585c0,34.95,28.434,63.384,63.372,63.384
+		c24.154,0,45.155-13.569,55.857-33.49l58.193,21.51c-1.676,6.795-2.668,13.825-2.668,21.123c0,48.846,39.737,88.582,88.571,88.582
+		c33.46,0,62.63-18.671,77.693-46.112l62.263,25.386c-0.514,2.826-0.888,5.711-0.888,8.676c0,26.684,21.708,48.402,48.425,48.402
+		c26.682,0,48.39-21.719,48.39-48.402c0-26.693-21.708-48.4-48.39-48.4c-16.687,0-31.399,8.453-40.111,21.322l-62.238-25.41
+		c2.172-7.66,3.398-15.693,3.398-24.043c0-15.916-4.286-30.816-11.654-43.754l100.037-72.923
+		C450.128,261.543,462.74,266.407,476.472,266.407z M63.383,341.117c-23.973,0-43.497-19.523-43.497-43.532
+		c0-23.979,19.524-43.503,43.497-43.503c24.002,0,43.526,19.512,43.526,43.503C106.91,321.594,87.385,341.117,63.383,341.117z
+		 M450.83,418.116c15.74,0,28.539,12.786,28.539,28.538c0,15.741-12.799,28.551-28.539,28.551c-15.764,0-28.562-12.81-28.562-28.551
+		C422.267,430.902,435.066,418.116,450.83,418.116z M194.926,110.961c0-28.913,23.535-52.43,52.448-52.43
+		c28.901,0,52.424,23.518,52.424,52.43c0,28.901-23.523,52.424-52.424,52.424C218.461,163.397,194.926,139.874,194.926,110.961z
+		 M476.472,171.752c20.622,0,37.391,16.78,37.391,37.39c0,20.627-16.769,37.39-37.391,37.39c-20.633,0-37.39-16.763-37.39-37.39
+		C439.059,188.533,455.839,171.752,476.472,171.752z" />
+                    </g>
+                </svg>
+                <p>Hormonal Deficiencies and Insufficiencies</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" width="24px" height="24px" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21,15c0-7.415-8.057-13.543-8.4-13.8a1,1,0,0,0-1.2,0C11.057,1.457,3,7.585,3,15c0,3.649,1.562,8,9,8S21,18.649,21,15Zm-9,6c-4.841,0-7-1.851-7-6C5,9.668,10.205,4.806,12,3.287,13.8,4.8,19,9.657,19,15,19,19.149,16.841,21,12,21Zm0-2a1,1,0,0,1-1,1,4.821,4.821,0,0,1-5-5A1,1,0,0,1,8,15,2.853,2.853,0,0,0,11,18,1,1,0,0,1,12,19Z" />
+                </svg>
+                <p>Hypercoagulability</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path
+                        d="M450-80q-12 0-21-9t-9-21q0-12 9-21t21-9v-62q-42-5-79-20t-67-40l-43 44q9 9 9 21t-9 21q-9 9-21 9t-21-9l-43-42q-9-9-9-21.5t9-21.5q9-9 21-8.5t21 8.5l44-44q-25-31-40-67t-20-78h-62q0 12-9 21t-21 9q-12 0-21-9t-9-21v-60q0-12 9-21t21-9q12 0 21 9t9 21h62q5-42 20.5-78t39.5-67l-44-44q-9 8-21 8.5t-21-8.5q-9-9-9-21.5t9-21.5l42-42q9-9 21.5-9t21.5 9q9 9 9 21.5t-9 21.5l43 43q31-25 67-40t78-20v-62q-12 0-20.5-9t-8.5-21q0-12 9-21t21-9h60q12 0 21 9t9 21q0 12-9 21t-21 9v62q42 5 78 20t67 40l44-44q-9-9-9-21t9-21q9-9 21.5-9t21.5 9l42 43q9 9 9 21t-9 21q-9 9-21.5 9t-21.5-9l-43 43q25 31 40 67.5t20 78.5h62q0-12 9-21t21-9q12 0 21 9t9 21v60q0 12-9 21t-21 9q-12 0-21-9t-9-21h-62q-5 42-20 78.5T698-304l43 43q9-9 21.5-9t21.5 9q9 9 9 21.5t-9 21.5l-42 42q-9 9-21.5 9t-21.5-9q-9-9-8.5-21t8.5-21l-44-44q-31 25-67 40.5T510-201v61q12 0 21 9t9 21q0 12-9 21t-21 9h-60Zm30-200q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm-70-40q17 0 28.5-11.5T450-360q0-17-11.5-28.5T410-400q-17 0-28.5 11.5T370-360q0 17 11.5 28.5T410-320Zm140 0q17 0 28.5-11.5T590-360q0-17-11.5-28.5T550-400q-17 0-28.5 11.5T510-360q0 17 11.5 28.5T550-320ZM340-440q17 0 28.5-11.5T380-480q0-17-11.5-28.5T340-520q-17 0-28.5 11.5T300-480q0 17 11.5 28.5T340-440Zm140 0q17 0 28.5-11.5T520-480q0-17-11.5-28.5T480-520q-17 0-28.5 11.5T440-480q0 17 11.5 28.5T480-440Zm140 0q17 0 28.5-11.5T660-480q0-17-11.5-28.5T620-520q-17 0-28.5 11.5T580-480q0 17 11.5 28.5T620-440ZM410-560q17 0 28.5-11.5T450-600q0-17-11.5-28.5T410-640q-17 0-28.5 11.5T370-600q0 17 11.5 28.5T410-560Zm140 0q17 0 28.5-11.5T590-600q0-17-11.5-28.5T550-640q-17 0-28.5 11.5T510-600q0 17 11.5 28.5T550-560Zm-70 80Z" />
+                </svg>
+                <p>Infections</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path
+                        d="M300-840q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 5-.5 10t-.5 10h-80q1-5 1-10v-10q0-60-40-100t-100-40q-47 0-87 26.5T518-666h-76q-15-41-55-67.5T300-760q-60 0-100 40t-40 100v10q0 5 1 10H81q0-5-.5-10t-.5-10q0-94 63-157t157-63Zm-88 480h112q32 31 70 67t86 79q48-43 86-79t70-67h113q-38 42-90 91T538-158l-58 52-58-52q-69-62-120.5-111T212-360Zm230 40q13 0 22.5-7.5T478-347l54-163 35 52q5 8 14 13t19 5h320v-80H623l-69-102q-6-9-15.5-13.5T518-640q-13 0-22.5 7.5T482-613l-54 162-34-51q-5-8-14-13t-19-5H40v80h297l69 102q6 9 15.5 13.5T442-320Zm38-167Z" />
+                </svg>
+                <p>Ischemia</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path
+                        d="M390-240v-140h-60v-144q0-23 31.5-39.5T440-580q47 0 78.5 16.5T550-524v144h-60v140H390Zm50-360q-26 0-43-17t-17-43q0-26 17-43t43-17q26 0 43 17t17 43q0 26-17 43t-43 17Zm0 480q-150 0-255-105T80-480q0-75 28.5-140.5t77-114q48.5-48.5 114-77T440-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T800-480v8l73-74 57 56-170 170-170-170 57-56 73 73v-7q0-116-82-198t-198-82q-116 0-198 82t-82 198q1 116 82.5 198T440-200q57 0 107-21.5t88-58.5l57 57q-49 48-113.5 75.5T440-120Z" />
+                </svg>
+                <p>Metabolic Disorders</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                    width="24">
+                    <path
+                        d="M480-120q-117 0-198.5-81.5T200-400q0-94 55.5-168.5T401-669q-20-5-39-14.5T328-708q-33-33-42.5-78.5T281-879q47-5 92.5 4.5T452-832q23 23 33.5 52t13.5 61q13-31 31.5-58.5T572-828q11-11 28-11t28 11q11 11 11 28t-11 28q-22 22-39 48.5T564-667q88 28 142 101.5T760-400q0 117-81.5 198.5T480-120Zm0-80q83 0 141.5-58.5T680-400q0-83-58.5-141.5T480-600q-83 0-141.5 58.5T280-400q0 83 58.5 141.5T480-200Zm0-200Z" />
+                </svg>
+                <p>Nutritional Deficiencies</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" height="24px" width="24px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512.002 512.002" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M511.717,173.104c-1.271-5.082-6.428-8.154-11.501-6.903l-73.775,18.451l-44.819-8.96
+			c-7.784-11.387-17.19-20.859-27.335-28.729h46.81l59.278-39.519c4.352-2.901,5.528-8.799,2.626-13.151
+			c-2.911-4.362-8.789-5.547-13.151-2.626l-54.5,36.333h-72.391c-10.505-4.94-20.812-8.647-30.066-11.397
+			c3.281-2.332,6.22-4.987,8.789-7.879c0.569,0.104,1.119,0.313,1.716,0.313c0.446,0,0.891-0.038,1.356-0.104l70.381-10.05
+			l49.768-69.67c3.044-4.267,2.057-10.183-2.209-13.227c-4.257-3.053-10.183-2.067-13.227,2.209l-45.047,63.061l-52.433,7.49
+			c0.55-2.655,0.901-5.367,0.901-8.154c0-0.446-0.066-0.882-0.076-1.327c16.346-4.21,28.52-18.953,28.52-36.599
+			c0-20.916-17.01-37.926-37.926-37.926c-5.234,0-9.482,4.238-9.482,9.481c0,5.234,4.248,9.482,9.482,9.482
+			c10.458,0,18.963,8.505,18.963,18.963c0,8.941-6.239,16.412-14.592,18.404c-8.951-16.422-28.767-27.885-51.778-27.885
+			s-42.828,11.463-51.778,27.885c-8.353-1.991-14.592-9.463-14.592-18.404c0-10.458,8.505-18.963,18.963-18.963
+			c5.234,0,9.482-4.248,9.482-9.482c0-5.243-4.248-9.481-9.482-9.481c-20.916,0-37.926,17.01-37.926,37.926
+			c0,17.645,12.174,32.389,28.53,36.599c-0.019,0.446-0.085,0.882-0.085,1.327c0,2.788,0.351,5.499,0.901,8.154l-52.433-7.49
+			l-45.047-63.061c-3.053-4.276-8.979-5.262-13.227-2.209c-4.267,3.044-5.253,8.96-2.209,13.227l49.768,69.67l70.381,10.05
+			c0.465,0.066,0.91,0.104,1.356,0.104c0.597,0,1.147-0.209,1.716-0.313c2.569,2.892,5.509,5.547,8.789,7.879
+			c-9.254,2.75-19.56,6.457-30.066,11.397h-72.391l-54.5-36.333c-4.362-2.92-10.24-1.735-13.151,2.626
+			c-2.901,4.352-1.726,10.249,2.626,13.151l59.278,39.519h46.81c-10.145,7.87-19.551,17.342-27.335,28.729l-44.819,8.96
+			l-73.775-18.451c-5.054-1.252-10.23,1.82-11.501,6.903c-1.271,5.082,1.82,10.231,6.893,11.501l75.852,18.963
+			c0.758,0.19,1.526,0.284,2.304,0.284c0.616,0,1.242-0.066,1.858-0.19l31.554-6.315c-1.745,4.305-3.338,8.751-4.627,13.473
+			l-6.504,54.348l0.057,0.095l-9.775,82.527c-3.973,33.792,3.309,67.006,20.518,93.516c19.532,30.085,59.25,65.953,137.586,65.953
+			s118.054-35.868,137.586-65.953c17.209-26.51,24.491-59.724,20.518-93.516l-15.948-135.566l-0.275-1.403
+			c-1.289-4.722-2.882-9.169-4.627-13.473l31.554,6.315c0.616,0.123,1.242,0.19,1.858,0.19c0.777,0,1.545-0.095,2.304-0.284
+			l75.852-18.963C509.896,183.335,512.987,178.186,511.717,173.104z M256.001,327.112c-55.268,0-105.453-25.733-128.834-65.801
+			l5.423-46.137c20.395-72.268,113.133-85.826,123.42-87.116c10.316,1.271,102.95,14.668,123.401,87.116l5.423,46.137
+			C361.454,301.379,311.268,327.112,256.001,327.112z" />
+                        </g>
+                    </g>
+                </svg>
+                <p>Tick-borne Diseases</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 458.09 458.089"
+                    xml:space="preserve">
+                    <g>
+                        <path d="M436.912,430.19c-0.03,0.006-0.077,0-0.118,0H21.184c-7.566,0-14.564-4.037-18.347-10.593
+		c-3.783-6.555-3.783-14.629,0-21.184L210.642,38.489c3.783-6.555,10.781-10.592,18.348-10.592c7.565,0,14.558,4.037,18.341,10.592
+		l206.776,358.139c2.506,3.481,3.983,7.749,3.983,12.377C458.096,420.703,448.609,430.19,436.912,430.19z M57.878,387.822H400.1
+		L228.989,91.456L57.878,387.822z M302.312,354.408c-1.785,3.818-5.13,6.206-8.913,7.093c1.762,3.464,2.181,7.565,0.449,11.378
+		c-2.997,6.609-10.805,9.511-17.372,6.508c-6.644-3.014-9.552-10.805-6.514-17.4c0.095-0.296,0.367-0.432,0.503-0.71l-43.072-19.357
+		l-43.621,18.146c0.142,0.278,0.384,0.42,0.479,0.704c2.837,6.679-0.266,14.404-6.992,17.241
+		c-6.679,2.784-14.375-0.337-17.188-7.027c-1.631-3.89-1.082-7.956,0.774-11.361c-3.742-0.992-7.052-3.511-8.701-7.353
+		c-2.784-6.69,0.308-14.416,7.022-17.2c6.679-2.825,14.375,0.289,17.2,6.975c0.101,0.296,0.071,0.573,0.171,0.846l27.538-11.449
+		l-27.207-12.224c-0.118,0.266-0.071,0.567-0.213,0.839c-2.997,6.597-10.805,9.511-17.401,6.514
+		c-6.579-3.014-9.469-10.805-6.472-17.413c1.744-3.812,5.125-6.183,8.896-7.116c-1.785-3.44-2.21-7.555-0.467-11.36
+		c3.009-6.608,10.805-9.499,17.413-6.514c6.608,3.015,9.511,10.805,6.466,17.413c-0.094,0.277-0.366,0.438-0.461,0.674
+		l43.066,19.398l43.592-18.134c-0.136-0.296-0.378-0.438-0.508-0.733c-2.809-6.727,0.307-14.41,7.021-17.224
+		c6.649-2.825,14.346,0.284,17.171,7.011c1.638,3.854,1.081,7.955-0.804,11.36c3.771,1.005,7.087,3.464,8.736,7.376
+		c2.783,6.668-0.313,14.34-7.022,17.165c-6.685,2.831-14.375-0.296-17.2-6.957c-0.13-0.277-0.071-0.591-0.172-0.856l-27.526,11.432
+		l27.189,12.234c0.112-0.26,0.083-0.555,0.207-0.839c3.038-6.597,10.805-9.517,17.39-6.502
+		C302.418,340.009,305.326,347.776,302.312,354.408z M271.718,240.673c3.404,3.114,5.556,7.436,5.556,12.229
+		c0,7.938-5.881,14.334-13.701,16.297v5.957c0,10.279-8.417,18.714-18.713,18.714h-34.685c-10.297,0-18.708-8.435-18.708-18.714
+		v-5.934c-7.861-1.963-13.772-8.358-13.772-16.326c0-4.822,2.163-9.144,5.609-12.247c-5.361-7.737-8.535-16.913-8.535-26.811
+		c0-27.216,23.613-49.316,52.741-49.316c29.117,0,52.76,22.1,52.76,49.316C280.288,223.748,277.091,232.923,271.718,240.673z
+		 M218.834,217.423c0-7.791-6.543-14.097-14.588-14.097c-8.015,0-14.594,6.307-14.594,14.097c0,7.796,6.579,14.1,14.594,14.1
+		C212.291,231.511,218.834,225.219,218.834,217.423z M242.761,258.914l-14.15-23.944l-14.682,24.405l14.541-7.058L242.761,258.914z
+		 M265.375,217.423c0-7.791-6.555-14.097-14.569-14.097c-8.051,0-14.576,6.307-14.576,14.097c0,7.796,6.525,14.1,14.576,14.1
+		C258.838,231.511,265.375,225.219,265.375,217.423z" />
+                    </g>
+                </svg>
+                <p>Toxicant and Toxin Poisoning</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg class="flex shrink-0" height="24px" width="24px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 460.476 460.476" xml:space="preserve">
+                    <g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M219.978,0.899C217.364,0.317,214.65,0,211.86,0c-6.688,0-12.958,1.773-18.381,4.861l9.605,9.248L219.978,0.899z" />
+                                <path
+                                    d="M244.679,19.667c-2.394-4.469-5.676-8.387-9.607-11.53l-15.318,11.978C227.732,19.122,236.124,18.844,244.679,19.667z" />
+                                <path
+                                    d="M182.165,14.79c-3.965,5.243-6.573,11.567-7.303,18.454c5.236-2.395,11.633-5,18.875-7.311L182.165,14.79z" />
+                                <path d="M176.59,49.07c4.953,14.734,18.867,25.352,35.27,25.352c20.551,0,37.211-16.66,37.211-37.211
+				c0-0.623-0.017-1.241-0.047-1.857C219.651,30.476,190.626,42.114,176.59,49.07z" />
+                                <path d="M163.867,168.289l0.008,270.642c0,11.899,9.646,21.545,21.546,21.545s21.546-9.646,21.546-21.545V266.714h9.303V438.93
+				c0,11.899,9.646,21.545,21.546,21.545c11.899,0,21.546-9.646,21.546-21.545l-0.393-255.965
+				C258.969,182.965,212.082,194.625,163.867,168.289z" />
+                                <path d="M337.963,94.065l-46-75.898c-5.138-8.48-16.182-11.188-24.66-6.048c-8.48,5.14-11.188,16.18-6.049,24.661l31.982,52.77
+				l-34.648,5.102c-10.321,0-71.327,0-81.525,0c4.763,6.899,16.142,22.303,31.406,35.909c14.207,12.664,31.774,23.762,50.5,24.968
+				V130.56c3.198,0-3.595,0.861,66.256-9.425c5.951-0.876,11.067-4.675,13.629-10.118C341.415,105.574,341.081,99.21,337.963,94.065
+				z" />
+                                <path
+                                    d="M120.847,132.376c-0.373,3.316-0.217-6.174-0.934,136.456c-0.05,9.916,7.948,17.995,17.864,18.045
+				c0.03,0,0.061,0,0.092,0c9.873,0,17.902-7.98,17.952-17.864l0.529-105.15C144.206,156.204,132.131,145.972,120.847,132.376z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p>Traumatic Brain Injury</p>
+            </li>
+        </ul>
+
+        <a href="#"
+            class="bg-white border border-blue-900 text-blue-900 hover:bg-gray-200 rounded-xl border-2 font-medium px-4 py-2 max-w-max hover:scale-110 transition-all duration-300">More
+            Services</a>
+    </section>
+
+    <section
+        class="flex flex-col px-4 text-center pt-16 pb-24 w-full bg-orange-100 justify-center items-center space-y-8">
+        <h2 class="text-center text-3xl font-bold text-blue-900">About Dr. Julie Griffith</h2>
+        <h3 class="text-center text-2xl font-medium">Your Expert in Preventative Medicine</h3>
+        <a href="#"
+            class="bg-white border border-blue-900 text-blue-900 hover:bg-gray-200 rounded-xl border-2 font-medium px-4 py-2 max-w-max hover:scale-110 transition-all duration-300">Learn
+            More</a>
+    </section>
+
+    <section class="flex flex-col mx-auto px-4 text-center justify-center items-center pt-16 pb-24 w-full space-y-4">
+        <h2 class="text-center text-3xl font-bold mb-4 text-blue-900">Reviews</h2>
+
+        <div class="carousel container relative w-full">
+            <div class="carousel-slides whitespace-nowrap overflow-hidden h-60 touch-pan-y" id="carouselSlides">
+                <div
+                    class="carousel-slide p-8 inline-flex flex-col w-full h-full -mr-1 items-center transition-transform duration-300 italic">
+                    <div class="lg:w-3/4 h-full flex flex-col justify-center">
+                        <p class="text-lg text-wrap">“Dr Griffith is exceptional in her expertise, talent, and
+                            compassion.
+                            I’ve seen over 100 clinicians for a chronic illness and she’s
+                            amongst the top 3. I’m grateful for her amazingness.”
+                        </p>
+                        <p class="mt-4 font-medium">- Laylee O.</p>
+                    </div>
+                </div>
+                <div
+                    class="carousel-slide p-8 inline-flex flex-col w-full h-full -mr-1 items-center transition-transform duration-300 italic">
+                    <div class="lg:w-3/4 h-full flex flex-col justify-center">
+                        <p class="text-lg text-wrap">“Dr. Griffith is very knowledgeable in treating my Lyme and she got
+                            me
+                            right in and helped me. She is a god send to the medical
+                            community. I feel blessed to have her on my team. Her staff is so professional and helpful.”
+                        </p>
+                        <p class="mt-4 font-medium">- Rena C.</p>
+                    </div>
+                </div>
+                <div
+                    class="carousel-slide p-8 inline-flex flex-col w-full h-full -mr-1 items-center transition-transform duration-300 italic">
+                    <div class="lg:w-3/4 h-full flex flex-col justify-center">
+                        <p class="text-lg text-wrap">
+                            "Dr Griffith is a great fit for me. She is high energy and the excitement I get when I'm
+                            trying to fix my health puzzle is the same I
+                            can see in her when she's trying to figure out what's wrong with me. That's something that's
+                            hard to find in a Dr. I feel very
+                            grateful to have found her."
+                        </p>
+                        <p class="mt-4 font-medium">- Camille B.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-prev absolute top-1/2 left-0 -translate-y-1/2 
+            bg-gray-300/10 hover:bg-gray-400/50 text-gray-800/50 font-bold 
+                  py-2 px-4 cursor-pointer h-full rounded" id="prevButton">
+                &lt;
+            </button>
+
+            <button class="carousel-next absolute top-1/2 right-0 -translate-y-1/2 
+                  bg-gray-300/10 hover:bg-gray-400/50 text-gray-800/50 font-bold 
+                  py-2 px-4 cursor-pointer h-full rounded" id="nextButton">
+                &gt;
+            </button>
+
+            <div class="carousel-indicators absolute bottom-1 left-1/2 -translate-x-1/2 flex space-x-2">
+                <button class="w-3 h-3 rounded-full bg-gray-400/50" data-slide="0"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-400/50" data-slide="1"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-400/50" data-slide="2"></button>
+            </div>
+        </div>
+
+        <a href="#"
+            class="bg-white border border-blue-900 text-blue-900 hover:bg-gray-200 rounded-xl border-2 font-medium px-4 py-2 max-w-max hover:scale-110 transition-all duration-300">
+            More Reviews</a>
+    </section>
+
+    <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        const numSlides = slides.length
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+        const indicatorButtons = document.querySelectorAll('.carousel-indicators button');
+        const hammertime = new Hammer(carouselSlides);
+
+        let currentSlide = 0;
+
+        function moveToSlide(targetSlide) {
+            if (targetSlide > numSlides - 1) {
+                targetSlide = 0
+            } else if (targetSlide < 0) {
+                targetSlide = numSlides - 1
+            }
+            currentSlide = targetSlide;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(${(-currentSlide) * 100}%)`;
+            });
+
+            indicatorButtons.forEach((button, index) => {
+                button.classList.toggle('bg-blue-500/50', index === currentSlide);
+            });
+        }
+
+        // Event listeners 
+        nextButton.addEventListener('click', () => moveToSlide(currentSlide + 1));
+        prevButton.addEventListener('click', () => moveToSlide(currentSlide - 1));
+        indicatorButtons.forEach(button => {
+            button.addEventListener('click', () => moveToSlide(parseInt(button.dataset.slide)));
+        });
+        hammertime.on('swipeleft', () => {
+            moveToSlide(currentSlide + 1);
+        });
+
+        hammertime.on('swiperight', () => {
+            moveToSlide(currentSlide - 1);
+        });
+
+        updateCarousel();
+
+
+    </script>
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('navDrawer');
+        const header = document.querySelector('header');
+
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('closed');
+
+            // Animation-related changes and header opacity adjustment
+            if (nav.classList.contains('closed')) {
+                nav.classList.add('max-h-0');
+                nav.classList.remove('max-h-screen');
+                // Set header to transparent initially when nav is closed (if scrollY <= 472)
+                header.classList.toggle('bg-gray-900/10', window.scrollY <= 472);
+            } else {
+                nav.classList.remove('max-h-0');
+                nav.classList.add('max-h-screen');
+                // Set header to opaque when nav is open, overriding scroll effects
+                header.classList.remove('bg-gray-900/10');
+                header.classList.add('bg-green-900');
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            // Only adjust header opacity based on scroll position if nav is closed
+            if (nav.classList.contains('closed')) {
+                header.classList.toggle('bg-gray-900/10', window.scrollY <= 472);
+                header.classList.toggle('bg-green-900', window.scrollY > 472);
+            }
+        });
+    </script>
+</body>
+
+</html>
